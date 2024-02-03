@@ -54,6 +54,16 @@ section{
     border: 2px solid rgb(243, 161, 53);
     font-size: 20px;
     border-radius: 20px;
+    animation-name: position;
+    animation-duration: 2s;
+}
+@keyframes position{
+    0%{
+        transform: translateY(600px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .btn:hover{
     letter-spacing: 5px;
@@ -74,16 +84,24 @@ section{
     text-align: center;
 
 }
-.home .div-home-1 .h3-home{
+.home .div-home-1 .h1-home{
     font-size: 50px;
     color: white;
     text-transform: uppercase;
     text-shadow: 0 30px 50px rgda(0,0,0,1);
+    animation-name: position;
+    animation-duration: 2s;
+    text-shadow: 6px 6px 10px rgb(243, 161, 53);
+}
+.home .div-home-1 .h1-home:hover{
+    transform: scale(1.1);
 }
 .home .div-home-1 .p-home{
     font-size: 30px;
     color: white;
     padding: 20px 0;
+    animation-name: position;
+    animation-duration: 2s;
 }
 .home .div-video video{
     position: absolute;
