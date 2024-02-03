@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+/* menu */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+header .logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: burlywood;
+}
+.menu a{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 15px;
+}
+.menu a:hover{
+    color: burlywood;
+}
+
+
+/* home */
+section{
+    padding: 2rem 9%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(243, 161, 53);
+    color: aliceblue;
+    padding: 15px 20px;
+    border: 2px solid rgb(243, 161, 53);
+    font-size: 20px;
+    border-radius: 20px;
+}
+.btn:hover{
+    letter-spacing: 5px;
+    transition: 0.6s;
+    background-color: rgba(243, 161, 53, 0);
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    
+}
+.home .div-home-1{
+    text-align: center;
+
+}
+.home .div-home-1 .h3-home{
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 30px 50px rgda(0,0,0,1);
+}
+.home .div-home-1 .p-home{
+    font-size: 30px;
+    color: white;
+    padding: 20px 0;
+}
+.home .div-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+/* book */
+.h1-book{
+    text-align: center;
+    padding: 30px 0;
+}
+.h1-book span{
+    font-size: 30px;
+    background-color: rgba(243, 161, 53, 0.498);
+    color: rgb(243, 161, 53);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: inline-block;
+}
+.book .h1-book span:nth-child(5){
+    background-color: rgba(240, 248, 255, 0);
+    margin: 2px;
+}
+
+.book .div-book-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.book .div-book-1 .image{
+    flex: 1 1 100px;
+}
+.book .div-book-1 img{
+    width: 100%;
+}
+.book .div-book-1 form{
+    flex: 1 1 100px;
+    padding: 20px;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+.book .div-book-1 form .input-box{
+    padding: 5px 0;
+}
+.book .div-book-1 form .input-box input{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid black;
+    font-size: 15px;
+    color: #333;
+    text-transform: none;
+}
+.book .div-book-1 form .input-box h3{
+    font-size: 25px;
+    padding: 10px 0;
+    color: #3a3838;
+}
+.book .btn-1{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(243, 161, 53);
+    color: aliceblue;
+    padding: 15px 20px;
+    border: 2px solid rgb(243, 161, 53);
+    font-size: 20px;
+    border-radius: 20px;
+}
+.book .btn-1:hover{
+    box-shadow: 10px 10px 10px gray;
+    transform: scale(1.1);
+}
+
+
+
+/* packages */
+.contuner-packages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.packages .div-packages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0;
+    width: 330px;
+}
+.packages .div-packages .box-packages{
+    flex: 1 1 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgb(148, 146, 146);
+}
+.packages .div-packages .box-packages img{
+    height: 300px;
+    width: 100%;
+}
+.btn-2{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgb(243, 161, 53);
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 2px solid rgb(243, 161, 53);
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn-2:hover{
+    background-color: rgba(243, 161, 53, 0.242);
+    color: rgb(209, 147, 12);
+}
+.packages .div-packages .box-packages .enf-packages-1{
+    padding: 20px;
+}
+.packages .div-packages .box-packages .enf-packages-1 h3{
+    font-size: 25px;
+    color: #333;
+}
+.packages .div-packages .box-packages .enf-packages-1 p{
+    font-size: 20px;
+    color: #666;
+    padding: 10px 0;
+}
+.packages .div-packages .box-packages .enf-packages-1 .ent-packages-2{
+    font-size: 20px;
+    color: #333;
+    padding-top: 5px;
+}
+
+.packages .div-packages .box-packages .enf-packages-1 .ent-packages-2 span{
+    color: #666;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+
+
+
+/* services */
+.services .div-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.services .div-container .box{
+    flex: 1 1 300px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.services .div-container .box h3{
+    font-size: 25px;
+    color: #333;
+}
+.services .div-container .box p{
+    font-size: 15px;
+    color: #666;
+    padding: 10px 0;
+}
+.services .div-container .box:hover{
+    box-shadow: 0 10px 10px rgb(148, 146, 146);
+}
+
+
+/* information */
+.h1{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: -20px;
+}
+.information .countainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.information .countainer video{
+    border-radius: 40px;
+}
+
+.information .countainer p{
+    color: #666;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-left: 0;
+    
+    font-size: larger;
+    text-transform: none;
+}
+
+
+
+/* gallery */
+.gallery .div-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.gallery .div-container .box{
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(148, 146, 146, 0.84);
+    border: 10px solid #fff;
+    border-radius: 5px;
+    flex: 1 1 300px;
+    height: 270px;
+    position: relative;
+}
+.gallery .div-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery .div-container .box .div-enf{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.7);
+    padding-top: 50px;
+    transform: translateY(0);
+    transition-duration: 1s;
+}
+.gallery .div-container .box .div-enf h3{
+    font-size: 25px;
+    color: rgb(243, 161, 53);
+}
+.gallery .div-container .box .div-enf p{
+    font-size: 15px;
+    color: aliceblue;
+    padding: 5px 0;
+}
+.gallery .div-container .box:hover .div-enf{
+    transform: translateY(-102%);
+}
+
+
+
+/* hotels */
+
+.hotels .div-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.hotels .div-container .box{
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(148, 146, 146, 0.84);
+    /* border: 10px solid #fff;*/
+    border-radius: 30px; 
+    flex: 1 1 300px;
+    height: 300px;
+    position: relative;
+}
+.hotels .div-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hotels .div-container .box .div-enf{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.7);
+    padding-top: 50px;
+    transform: translateY(0);
+    transition-duration: 1s;
+}
+.hotels .div-container .box .div-enf h3{
+    font-size: 25px;
+    color: rgb(243, 161, 53);
+    padding-top:50px;
+    padding-bottom: 15px;
+}
+.hotels .div-container .box:hover .div-enf{
+    transform: translateY(-102%);
+}
+
+
+
+/* contact */
+.contact .div-contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+.contact .div-contact .image{
+    flex: 1 1 350px;
+}
+.contact .div-contact .image  img{
+    width: 100%;
+}
+.contact .div-contact form{
+    flex: 1 1 500px;
+    padding: 20px ;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    border-radius: 5px;
+}
+.contact .div-contact form .div-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .div-contact form .div-input input{
+    width: 49%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 17px;
+    color: #333;
+    background-color: rgba(135, 132, 132, 0.1);
+    text-transform: none;
+}
+.contact .div-contact form textarea{
+    width: 49%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 17px;
+    color: #333;
+    background-color: rgba(135, 132, 132, 0.1);
+    text-transform: none;
+}
+.contact .div-contact form textarea{
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+.btn-3{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgb(243, 161, 53);
+    color: aliceblue;
+    padding: 15px 20px;
+    border: 2px solid rgb(243, 161, 53);
+    font-size: 20px;
+    border-radius: 20px;
+}
+.btn-3:hover{
+    box-shadow: 10px 10px 10px gray;
+    transform: scale(1.1);
+}
+
+
+
+/* footer */
+.footer{
+    background-color: rgb(19, 18, 18);
+    padding: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+}
+.div-footer{
+    color: white;
+    
+}
+.p-footer{
+    color: rgb(183, 176, 176);
+}
+.contuner-footer-4{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p-footer-1{
+    gap: 30px;
+}
+hr{
+    width: 1100px;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:600px){
+    header{
+        height: 500px;
+        display: block;
+        position: relative;
+    }
+    header a{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .book .div-book-1{
+        display: block;
+    }
+    .information .countainer video{
+        width: 400px;
+        margin-top: 40px;
+    }
+    .information .countainer{
+        display: block;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+    }
+    
+}
