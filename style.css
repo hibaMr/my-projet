@@ -289,6 +289,8 @@ section{
 }
 .information .countainer video{
     border-radius: 40px;
+    max-width: 100%;
+    height: auto;
 }
 
 .information .countainer p{
@@ -506,8 +508,7 @@ hr{
         display: block;
     }
     .information .countainer video{
-        width: 400px;
-        margin-top: 40px;
+        margin: 40px 0 0 0;
     }
     .information .countainer{
         display: block;
