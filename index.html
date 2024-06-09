@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- menu -->
-    <header>
+    <header id="header">
         <a href="#" class="logo"><span>T</span>ravel</a>
         <nav class="menu">
             <a href="#home">home</a>
@@ -56,21 +56,25 @@
             <form action="">
                 <div class="input-box">
                     <h3 class="h3-box">where to</h3>
-                    <input type="text" placeholder="place name">
+                    <input type="text" placeholder="place name" id="place-input">
+                    <div class="divFormJS displayJS" id="divForm11">where to s'il vous plaît</div>
                 </div>
                 <div class="input-box">
                     <h3 class="h3-box">how many</h3>
-                    <input type="number" placeholder="number of guests">
+                    <input type="number" placeholder="number of guests" id="how-input">
+                    <div class="divFormJS displayJS" id="divForm12">how many s'il vous plaît</div>
                 </div>
                 <div class="input-box">
                     <h3 class="h3-box">arrivals</h3>
-                    <input type="date">
+                    <input type="date" id="arrivals-input">
+                    <div class="divFormJS displayJS" id="divForm13">arrivals s'il vous plaît</div>
                 </div>
                 <div class="input-box">
                     <h3 class="h3-box">leaving</h3>
-                    <input type="date">
+                    <input type="date" id="leaving-input">
+                    <div class="divFormJS displayJS" id="divForm14">leaving s'il vous plaît</div>
                 </div>
-                <input type="submit" class="btn-1" value="book now">
+                <input type="submit" class="btn-1" value="book now" id="btn-book">
             </form>
         </div>
     </section>
@@ -89,10 +93,16 @@
             <span class="span-7">e</span>
             <span class="span-7">s</span>
         </h1>
+        <!-- JS -->
+        <div class="displayJS" id="divImgJS">
+            <div id="divX" onclick="click_X()" class="displayJS">x</div>
+            <img src="" alt="" id="imgJS">
+        </div>
+        <!--Fin JS -->
         <div class="contuner-packages">
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-1.jpg" alt="non">
+                    <img loading="lazy" src="image/img-1.jpg" alt="non" id="img-1" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg> fes</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -108,7 +118,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-2.jpg" alt="non">
+                    <img loading="lazy" src="image/img-2.jpg" alt="non" id="img-2" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  marrakesh</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -124,7 +134,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-3.jpeg" alt="non">
+                    <img loading="lazy" src="image/img-3.jpeg" alt="non" id="img-3" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  chefchaouen</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -139,7 +149,7 @@
                 </div>
             </div><div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-4.jpg" alt="non">
+                    <img loading="lazy" src="image/img-4.jpg" alt="non" id="img-4" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  tangier</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -155,7 +165,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-5.webp" alt="non">
+                    <img loading="lazy" src="image/img-5.webp" alt="non" id="img-5" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  assila</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -171,7 +181,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-6.jpg" alt="non">
+                    <img loading="lazy" src="image/img-6.jpg" alt="non" id="img-6" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  agadir</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -187,7 +197,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-7.jpg" alt="non">
+                    <img loading="lazy" src="image/img-7.jpg" alt="non" id="img-7" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  ovens</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -203,7 +213,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-8.jpg" alt="non">
+                    <img loading="lazy" src="image/img-8.jpg" alt="non" id="img-8" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  beni mellal</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -219,7 +229,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-9.jpeg" alt="non">
+                    <img loading="lazy" src="image/img-9.jpeg" alt="non" id="img-9" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  rabat</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -235,7 +245,7 @@
             </div>
             <div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-10.jpg" alt="non">
+                    <img loading="lazy" src="image/img-10.jpg" alt="non" id="img-10" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  casa blanca</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -250,7 +260,7 @@
                 </div>
             </div><div class="div-packages">
                 <div class="box-packages">
-                    <img loading="lazy" src="image/img-11.jpg" alt="non">
+                    <img loading="lazy" src="image/img-11.jpg" alt="non" id="img-11" onclick="click_img(this.src)">
                     <div class="enf-packages-1">
                         <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  safi</h3>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -264,10 +274,10 @@
                     </div>
                 </div>
             </div>
-            <div class="contuner-packages">
+            
                 <div class="div-packages">
                     <div class="box-packages">
-                        <img loading="lazy" src="image/img-12.jpg" alt="non">
+                        <img loading="lazy" src="image/img-12.jpg" alt="non" id="img-12" onclick="click_img(this.src)">
                         <div class="enf-packages-1">
                             <h3 class="h3-packages"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f4a02a" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>  essaouira</h3>
                             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -281,6 +291,7 @@
                         </div>
                     </div>
                 </div>
+        </div>
     </section>
 
 
@@ -624,15 +635,20 @@
             </div>
             <form action="">
                 <div class="div-input">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
+                    <input type="text" placeholder="name" id="name-input">
+                    <div class="divFormJS displayJS" id="divForm1">donnée le nom s'il vous plaît</div>
+                    <input type="email" placeholder="email" id="email-input">
+                    <div class="divFormJS displayJS" id="divForm2">donnée l'email s'il vous plaît</div>
                 </div>
                 <div class="div-input">
-                    <input type="number" placeholder="number">
-                    <input type="text" placeholder="subject">
+                    <input type="number" placeholder="number" id="number-input">
+                    <div class="divFormJS displayJS" id="divForm3">donnée le number s'il vous plaît</div>
+                    <input type="text" placeholder="subject" id="subject-input">
+                    <div class="divFormJS displayJS" id="divForm4">donnée le sujet s'il vous plaît</div>
                 </div>
-                <textarea name="mes" id="mes" cols="30" rows="10" placeholder="message"></textarea>
-                <input type="submit" class="btn-3" value="send message">
+                <textarea name="mes" id="mes" cols="30" rows="10" placeholder="message" id="message-input"></textarea>
+                <div class="divFormJS displayJS" id="divForm5">donnée le message s'il vous plaît</div>
+                <button class="btn-3" id="btnJS">send message</button>
             </form>
         </div>
     </section>
@@ -663,5 +679,7 @@
         </div>
     </div>
 
+    
+    <script src="script.js"></script>
 </body>
 </html>

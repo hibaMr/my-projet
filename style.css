@@ -22,6 +22,7 @@ header{
     justify-content: space-between;
     padding: 20px 5%;
 }
+
 header .logo{
     font-size: 30px;
     font-weight: bolder;
@@ -88,14 +89,11 @@ section{
     font-size: 50px;
     color: white;
     text-transform: uppercase;
-    text-shadow: 0 30px 50px rgda(0,0,0,1);
     animation-name: position;
     animation-duration: 2s;
     text-shadow: 6px 6px 10px rgb(243, 161, 53);
 }
-.home .div-home-1 .h1-home:hover{
-    transform: scale(1.1);
-}
+
 .home .div-home-1 .p-home{
     font-size: 30px;
     color: white;
@@ -124,7 +122,7 @@ section{
     background-color: rgba(243, 161, 53, 0.498);
     color: rgb(243, 161, 53);
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 10px;
     display: inline-block;
 }
 .book .h1-book span:nth-child(5){
@@ -193,8 +191,8 @@ section{
 .packages .div-packages{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    margin: 20px 0;
+    gap: 15px;
+    margin: 20px 0px;
     width: 330px;
 }
 .packages .div-packages .box-packages{
@@ -521,3 +519,41 @@ hr{
     }
     
 }
+
+
+
+/* JS */
+
+#divImgJS{
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    background-color: #19181866;
+    position: fixed;
+    top:0px;
+    bottom: 100px;
+    left: 0;
+}
+
+#imgJS{
+    width: 100%;
+    height: 100%;
+}
+
+.displayJS{
+    display: none;
+}
+
+#divX{
+    font-size: 50px;
+    color: aliceblue;
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    cursor: pointer;
+}
+
+.divFormJS{
+    color: red;
+}
+
